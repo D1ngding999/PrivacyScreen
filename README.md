@@ -22,18 +22,24 @@
 
 ## 安装
 
+**一行命令（推荐）**——不需要 git，不需要装任何开发工具，直接下载预编译的通用二进制（Intel / Apple Silicon 均可）：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/D1ngding999/PrivacyScreen/main/install.sh | bash
+```
+
+或者本机编译（需要 Command Line Tools，`xcode-select --install`）：
+
 ```bash
 git clone https://github.com/D1ngding999/PrivacyScreen.git
 cd PrivacyScreen
-bash install.sh       # 编译 + 安装为开机自启服务
+bash install.sh
 ```
-
-需要 Command Line Tools（`xcode-select --install`）。
 
 ## 卸载
 
 ```bash
-bash uninstall.sh     # 停止并移除服务；源码目录自行 rm -rf
+curl -fsSL https://raw.githubusercontent.com/D1ngding999/PrivacyScreen/main/uninstall.sh | bash
 ```
 
 ## 自定义快捷键
